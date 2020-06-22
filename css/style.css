@@ -1,0 +1,164 @@
+.site-header {
+  width: 1200px;
+  height: 110px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header .logo-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+
+.site-header .logo-author a {
+  text-decoration: none;
+}
+
+.site-header .logo-author .logo-img {
+  height: 54px;
+  width: 54px;
+}
+
+.site-header .logo-author .name-author {
+  font-family: 'Mistral', sans-serif;
+  color: black;
+  margin: 0 0 0 20px;
+  font-size: 55px;
+}
+
+.site-header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header .menu a {
+  text-decoration: none;
+  color: #999999;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.site-header .menu a:hover {
+  font-weight: 700;
+  color: black;
+}
+
+.site-header .menu li {
+  display: inline;
+  margin-right: 30px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.site-header .menu .last {
+  margin: 0 10px 0 0;
+}
+
+.site-header .menu .send-email {
+  height: 54px;
+  width: 54px;
+  opacity: 0.5;
+}
+
+.site-header .menu .send-email:hover {
+  opacity: 1;
+}
+
+.main-block {
+  margin: 0 auto;
+  max-width: 2000px;
+  height: 693px;
+  background: url(../img/bg-main1.jpg);
+  background-size: 100% 100%;
+}
+
+.main-block .title {
+  width: 1070px;
+  max-height: 250px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 50px;
+}
+
+.main-block .title h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  margin: 0;
+  letter-spacing: 0;
+  word-spacing: -10px;
+}
+
+.main-block .title .Pacifico-text {
+  position: relative;
+  margin: 0;
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  top: 100px;
+  left: 125px;
+}
+
+.main-block .title .high-headline {
+  font-size: 150px;
+  letter-spacing: -4px;
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.main-block .device-photo {
+  width: 820px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-block .device-photo .device1 {
+  height: 370px;
+  position: absolute;
+  top: 110px;
+  left: -10px;
+  z-index: 1;
+}
+
+.main-block .device-photo .device2 {
+  height: 350px;
+  position: absolute;
+  top: 160px;
+  left: 290px;
+  z-index: 3;
+}
+
+.main-block .device-photo .device3 {
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  top: 15px;
+  left: 400px;
+  z-index: 2;
+}
+
+.latest-work {
+  background-color: #f2f2d2;
+  margin: 0 auto;
+  max-width: 2000px;
+  height: 500px;
+  z-index: 5;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
