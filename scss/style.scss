@@ -1,4 +1,4 @@
-
+///////////////////////////////////////////// header
 
 .site-header{
  width: 1200px;
@@ -6,7 +6,6 @@
  margin: 0 auto;   
  display: flex;
  justify-content: space-between;
-//  background: #f1f1f1;
  align-items: center;
  
 
@@ -74,7 +73,7 @@ li{
 }
 
 
-//////////////////////////////////////////////////////////////////////////////////// first section
+///////////////////////////////////////////// section 1
 
 
 .main-block{
@@ -148,7 +147,7 @@ background-size: 100% 100%;
 
 }
 }
-//////////////////////////////////////////////////////////////////// second section
+///////////////////////////////////////////// section 2
 .latest-work{
     background-color: #f2f2d2;
     margin: 0 auto;
@@ -342,7 +341,6 @@ background-size: 100% 100%;
     
         .btn:active, .btn2:active {
         opacity: 0.6;
-        transition: 0s
         }
     
         } 
@@ -350,18 +348,10 @@ background-size: 100% 100%;
 
 
 
+///////////////////////////////////////////// section 3
 
 
-
-
-
-
-
-
-///////////////////////////////////////////// sec 3
-
-
-.sec3{
+.how-we-work{
     margin: 0 auto;
     max-width: 2000px;
     height: 931px;
@@ -386,24 +376,65 @@ background-size: 100% 100%;
       }
         #header{
          padding: 20px;
-         background: orange;
          grid-area: header;
+         font-family: 'Oswald', sans-serif;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         
+         
+        
+        h1{
+            margin: 50px 0 0 0;
+            color: #FF0000;
+            font-size: 120px;
+            display: flex;
+            vertical-align: middle;
+                
+            span{
+             padding: 7px 0 0 0;
+             color: black;
+             font-size: 90px;
+
+            hr{
+            margin: 0;
+            width: 100px;
+            height: 14px;
+            background: black;
+            border: none;
+                }
+            }
+        }
+
+       
+         }
+
+         #stages1, #stages2,#stages3{
+            padding: 25px 0 0 15px ;
          }
         #stages1{
-         padding: 20px;
-         background: palegreen;
          grid-area: stages1;
          } 
         #stages2{
-         padding: 20px;
-         background: palegreen;
          grid-area: stages2;
          }
-        #stages3{
-         padding: 20px;
-         background: palegreen;
+        #stages3{         
          grid-area: stages3;
          } 
+         h3{
+            font-size: 23px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .work-icon{
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        p{
+            margin-top: 27px;
+            font-family: Arial;
+            line-height: 27px;
+        }
+        
          #btn{    
          padding: 20px;
          grid-area: btn;
@@ -421,6 +452,195 @@ background-size: 100% 100%;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 19px;
                 font-weight: 600;
+                outline: none;
+                transition: ease all 0.5s;
+            }
+            button:hover{
+                transition: ease all 0.5s;
+                opacity: 0.8;
+             }
+            button:active{
+               opacity: 0.5;
             }
             } 
+}
+
+///////////////////////////////////////////// section 4
+
+.latest-blog-post{
+    margin: 0 auto;
+    max-width: 2000px;
+    height: 1085px;
+    background:#3F3B49;
+    position: relative;
+
+    .wrapper{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "header-title"
+        "card"
+        "input";
+        // grid-gap: 10px;   
+        margin: 0 auto;
+        grid-template-rows: 3fr 7fr 2fr;
+        grid-template-columns: 1fr;
+        
+        .header{
+            width: 710px;
+            max-height: 250px;
+            margin: 0 auto;
+            position: relative;
+            top: -50px;
+            text-align: center;
+            padding-top: 90px;
+            color: white;
+            grid-area: header-title;
+            
+            h1{
+                font-family: 'Oswald', sans-serif;
+                font-size: 60px;
+                margin: 0;
+                letter-spacing: 0;
+                word-spacing: -10px;
+                
+             }
+             .Pacifico-text{
+                 position: relative;
+                 margin: 0;
+                 font-size: 50px;
+                 font-family: 'Pacifico', cursive;
+                 top: 65px;
+                 right: 190px;
+                
+             }
+             .high-headline{
+                 font-size: 120px;
+                 letter-spacing: -4px;
+                 font-weight: bold;
+                
+             }
+        }
+
+        .cards{
+            width: 1500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: card;
+            overflow: hidden;  
+
+            .card{
+                min-height: 560px;
+                min-width: 422px;
+                background: #595466; 
+                grid-area: card;
+                margin: 0 10px;
+                position: relative;
+                
+                .card-img{
+                    min-height:311px ;
+                    min-width: 248px;
+                    background: #3F3B49; //no-repeat url(../img/Browser.jpg)  - example
+                    background-size: 100% 100%;
+                    margin: 25px 25px 0 25px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    
+
+                    .date{flex-direction: column;
+                        position: relative;
+                        top: 28px;
+                    .day{
+                        height:69px;
+                        width: 89px;
+                        background: white;
+                        text-align: center;
+                        border-radius: 5px 5px 0 0;
+                        display: flex;
+                        align-items: center;
+                                           
+                        p{ 
+                            color:#595466 ;
+                            margin: 0 auto;
+                            font-size: 45px;
+                            font-weight: bold;
+                            font-family: 'Montserrat', sans-serif;
+                        }
+
+                     }
+                        .month{
+                        height:28px;
+                        width: 89px;
+                        background: #3F3B49;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 0 0 5px 5px ;
+                                
+                        p{ 
+                            color:white ;
+                            margin: 0 auto;
+                            font-size: 13px;
+                            font-weight: bold;
+                            font-family: 'Montserrat', sans-serif;
+                           }
+
+                       }
+                 }
+             }
+
+            }
+        
+
+        .user-post{
+            margin: 23px 47px 0 35px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+
+            .user-name{
+                font-size: 12px;
+                font-weight: 600;
+            
+            }
+            .theme{
+                margin: 13px 0 0 0;
+                font-size: 17px;
+                font-weight: 600;
+                line-height: 23px;
+                
+            }
+            .read-article{
+                font-size: 11px;
+                margin: 30px 0 0 0;
+                font-weight: bold;
+                display: flex;
+
+                p{
+                    margin: 6px 0 0 0;
+                    letter-spacing: 0.5px;
+                }
+                .fa-angle-right{  
+                    margin: 0 15px 0 7px;  
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+        }
+        .input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: input;
+            
+        }
+        
+    }
+    
 }
