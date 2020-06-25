@@ -717,12 +717,6 @@
   font-size: 20px;
 }
 
-@media (max-width: 1505px) {
-  .latest-blog-post .wrapper .slider-container {
-    width: 1000px;
-  }
-}
-
 .latest-blog-post .wrapper .input {
   display: -webkit-box;
   display: -ms-flexbox;
