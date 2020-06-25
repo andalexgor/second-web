@@ -1,66 +1,41 @@
+let position = 0
+const slidesToShow = 3
+const slideToScroll = 1
+const container = document.querySelector('.slider-container')
+const track = document.querySelector('.cards')
+const btnPrev = document.querySelector('#move-card-rigth')
+const btnNext = document.querySelector('#move-card-left')
+const items = document.querySelectorAll('.card')
+const itemsCount = items.length
+const itemWidth = (container.clientWidth) / slidesToShow
+const movePosition = slideToScroll * itemWidth
 
 
-let bibis = document.querySelector('#move-card-rigth')
-let bibis2 = document.querySelector('#move-card-rigth2')
-let yellow = document.querySelectorAll('.card')
-let id = document.querySelector('#id2')
-let id2 = document.querySelector('#id3')
-let id3 = document.querySelector('#id4')
-let px = 1
-bibis.onclick = function () {
+// items.forEach((item) => {
+//     item.style.minWidth=`${itemWidth}px`
+// });
 
-    id2.style.background = 'green'
-    id3.style.zIndex = 9
-    id2.style.zIndex = 10
-
-    let timerId = setInterval(() => {
-
-        id2.style.left = px + 'px'
-
-        px += 1
-        console.log(px)
-
-    }, 1);
+btnNext.addEventListener('click', () => {
+    const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth
+    position -= itemsLeft >= slideToScroll ? movePosition : itemsLeft * itemWidth
+    setPosition()
+    chechBtns()
+})
 
 
+btnPrev.addEventListener('click', () => {
+    const itemsLeft = Math.abs(position) / itemWidth
+    position += itemsLeft >= slideToScroll ? movePosition : itemsLeft * itemWidth
+    setPosition()
+    chechBtns()
+})
 
-    setTimeout(() => {
-        clearInterval(timerId); {
-            console.log('stop')
-        };
-    }, 5000);
-
-
+const setPosition = () => {
+    track.style.transform = `translateX(${position}px)`
 }
-bibis2.onclick = function () {
-
-    id2.style.background = 'green'
-    id3.style.zIndex = 9
-    id2.style.zIndex = 10
-
-    let timerId = setInterval(() => {
-
-        id2.style.left = px + 'px'
-
-        px -= 1
-        console.log(px)
-
-    }, 1);
-
-
-
-    setTimeout(() => {
-        clearInterval(timerId); {
-            console.log('stop')
-        };
-    }, 5000);
-
-
+const chechBtns = () => {
+   btnPrev.disabled = position === 0
+   btnNext.disabled = position <=-(itemsCount-slidesToShow)*itemWidth
 }
 
-
-
-
-
-
-
+chechBtns()
